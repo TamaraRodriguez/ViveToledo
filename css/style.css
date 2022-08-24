@@ -1,0 +1,759 @@
+/*CSS*/
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: "Corbel", Arial, sans-serif;
+	color: #6b6b6b;
+}
+
+header{
+	width: auto;
+	height: 400px;
+	background: url(../img/panoramica.jpg) no-repeat center bottom #b1d8f7;
+	background-size: cover;
+}
+
+/*---- Menú de navegación ----*/
+
+nav{
+	position: sticky; /*significado pegajoso, se pega al hacer scroll.*/
+	top: 0; /*el menú se pega cuando llega a la posicióm TOP:0*/
+	z-index: 2;/*por arriba de todo el retos de los elementos*/
+	background-color: #d3a880;
+	text-align: right;
+	padding: 5px;
+	margin: 0;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	font-family: "Corbel", Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0 5px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px 10px;
+	display:block;
+}
+
+nav ul li a:hover{color: #6b6b6b;}
+
+li{
+	display: inline-block;
+	position: relative;
+}
+
+li ul{
+	display: none;
+	position: absolute;
+	background-color: #d3a880;
+}
+
+li:hover ul{display: block;}
+
+li ul li{
+	display: block;
+    padding: 0 5px;
+    text-align: left;
+    width: max-content;
+}
+
+h1{
+	font-family: "Gabriola";
+	font-size: 30px;
+	color: #6b6b6b;
+	text-align: left;
+	padding: 75px;
+}
+
+main{
+	width: 1349px;
+    margin: auto;
+}
+
+a{text-decoration: none;}
+
+strong{
+	color: #4d4c4c;
+	font-weight: bold;
+}
+
+/*---- Menú dinámico ----*/
+
+.iconos{
+	width: 1349px;
+    margin: auto;
+    background-color: white;
+}
+
+#dinamico{
+	width: 1090px;
+	margin: 0px 205px;
+	padding: 5px 25px;
+}
+
+#dinamico li{
+	width: 200px;	
+	height: 200px;
+	background-color: white;
+	list-style: none;
+	vertical-align: top;
+	margin: 0;
+    padding: 10px 10px;
+}
+
+#dinamico figure{padding: 10px;}
+
+#dinamico img{
+	width: 90px;
+	height: 90px;
+	padding: 0px 45px;
+	align-content: center;
+}
+
+h2{
+	font-family: "Corbel";
+	font-size: 14px;
+	font-weight: bold;
+	color: #6b6b6b;
+	text-align: center;
+	padding: 5px;
+}
+
+#dinamico li p{
+	font-size: 12px;
+	padding: 5px 15px;
+	text-align: center;
+	color: #6b6b6b;
+}
+
+/*---- Toledo / Inicio ----*/
+
+article{
+	padding: 30px 30px;
+	margin: auto;
+}
+
+article h2{
+	font-family: Gabriola;
+	font-size: 34px;
+	color: #d3a880;
+	padding: 20px;
+}
+
+article p{
+	font-size: 14px;
+	text-align: justify;
+	padding: 5px 23px;
+}
+
+#inicio{
+	margin: auto;
+	background: #a9a9a926;
+}
+
+
+#inicio p{
+	margin: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+#inicio ul{
+	margin: 0px 128px;
+    padding: 30px 0px;
+}
+
+#inicio ul li{padding: 1px;}
+
+#inicio h3{
+	background: url(../img/marco.png) no-repeat center;
+    position: absolute;
+    width: 188px;
+}
+
+h3{
+	font-family: Gabriola;
+    font-size: 30px;
+    color: #d3a880;
+    padding: 10px;
+    text-align: center;
+}
+
+.estrecho h3{padding: 138px 76px;}
+
+.ancho li {margin-top: -61px;}
+
+.ancho h3{padding: 131px 162px;}
+
+.imagen {
+    float: right;
+    margin-top: 9px;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+/* Opiniones */
+
+#opiniones{
+	width: 1349px;
+	background-color: white;
+}
+
+#opiniones ul{
+	margin: 0px 80px;
+    padding: 10px 117.9px;
+    padding-bottom: inherit;
+}
+
+#opiniones li{
+	padding: 10px;
+	margin: 10px;
+	background-color: #a9a9a926;
+}
+
+/*---- Historia ----*/
+
+iframe{
+	width: 560px;
+    height: 315px;
+}
+
+#historia{background: #a9a9a926;}
+
+#historia article{width: 1100px;}
+
+#historia ul{
+	width: 248px;
+    height: 67px;
+    background: white;
+    border-radius: 75px;
+    margin: 37px 422px;
+    text-align: center;
+}
+
+#historia h3{
+	font-size: 25px;
+	padding: 14px 0px;
+}
+
+/* Personajes */
+
+#personajes{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+}
+
+#personajes ul{
+	padding: 30px 61px;
+	margin: auto;
+}
+
+#personajes li{vertical-align: middle;}
+
+#personajes p{
+	text-align: center;
+	font-weight: bold;
+}
+
+#personajes p a{
+	line-height: 40px;
+	background: #d3a880;
+	color: white;
+	font-weight: bold;
+    border-radius:13px;
+    padding: 10px;
+}
+
+#personajes p a:hover{color: #6b6b6b;}
+
+.galeria{padding: 5px 472px;}
+
+/* 3 Culturas */
+
+#culturas{
+	padding: 40px;
+	background: url(../img/antiguo.jpg);
+}
+
+	/*background-size: cover;*/
+
+#culturas ul{
+	margin: auto;
+	padding: 0px 151px;
+	align-content: center;
+}
+
+#culturas li{
+	width: 250px;	
+	height: 370px;
+	background-color: #e1e8eebf;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#culturas li figure{padding: 20px;}
+
+#culturas li h3{height: 45px;}
+
+#culturas li p{
+	padding: 10px;
+	text-align: center;
+}
+
+/* Leyendas */
+
+#leyendas article{width: 1100px;}
+
+#leyendas ul{margin: 35px 208px;}
+
+#leyendas li{
+	line-height: 40px;
+	width: 300px;
+	background: #a9a9a926;
+	font-weight: bold;
+    border-radius:13px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#leyendas h4{font-size: 30px;}
+
+/*---- Ventana modal----*/
+
+.modalmask{
+    position: fixed;
+    font-family: "Corbel";
+	font-size: 14px;
+	font-weight: bold;
+	color: #6b6b6b;
+	text-align: center;
+	padding: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    display: none;    
+}
+
+#ajorca .modalbox{
+	width: 1100px;
+	padding: 30px;
+	font-weight: normal;
+}
+
+#callejon .modalbox{
+	width: 1100px;
+	padding: 30px;
+	font-weight: normal;
+}
+
+#mirko .modalbox{
+	width: 610px;
+	padding: 30px;
+}
+
+.movedown{margin: 0 auto;}
+
+.modalmask:target .movedown{       
+    margin:7% auto;
+    display: block;
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+.close{
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:13px;
+}
+ 
+.close:hover{background: #d3a880;}
+
+/*---- Turismo ----*/
+
+#consejos p{
+	text-align: center;
+	width: 900px;
+	margin: auto;
+}
+
+#turismo{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+	background: #a9a9a926;
+}
+
+#turismo ul{
+	display: block;
+	vertical-align: top;
+	width: 700px;
+	height: auto;
+
+}
+#turismo li{
+	width: 700px;
+	padding: 10px;
+	-webkit-transition: prop time;
+	-o-transition: prop time;
+	transition: prop time;	vertical-align: top;
+}
+
+#turismo article h3{
+	float: right;
+    position: absolute;
+    margin: 0px 127px;
+    margin-left: 281px;
+}
+
+#turismo article p{
+	width: 300px;
+	padding: 10px;
+    text-align: left;
+    float: right;
+    position: absolute;
+    margin: 55px 284px;
+}
+
+#turismo p a{
+	float: left;
+    background-color: #d3a880;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 72px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    margin: 86px 0px;
+}
+
+#turismo figure{
+	background: url(../img/marco_turismo.png) no-repeat center;
+	padding: 26px 86px;
+	float: left;
+}
+
+#turismo img{
+	padding: 10px;
+    padding-bottom: 4px;
+}
+
+#turismo article{
+	width: 700px;
+	margin: unset;
+}
+
+aside{
+	margin-left: auto;
+    width: 400px;
+    height: 1230px;
+    background-color: grey;
+    vertical-align: top;
+    margin-top: -1264px;
+    padding: 10px;
+    background: url(../img/itinerario.png) no-repeat center center;
+}
+
+aside h3{margin-top: 118px;}
+
+aside p{
+	margin: auto;
+    padding-top: 95px;
+    padding-left: 234px;
+    margin-right: 37px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h4{
+	font-family: Gabriola;
+	font-size: 30px;
+	color: #d3a880;
+	padding: 15px;
+}
+
+h5{
+	font-size: 14px;
+	font-weight: bold;
+	color: #4d4c4c;
+	padding: 30px 20px 10px 20px;
+}
+
+/*---- Contacto ----*/
+
+#reservas ul{
+	margin: 10px 53px;
+	width: auto;
+}
+
+#reservas img{
+	padding-right: 20px; 
+	padding-left: 140px;
+}
+
+/* Deja tu comentario*/
+
+#comentarios ul{
+	margin: 10px 136px;
+	width: auto;
+}
+
+#comentarios li{
+	padding: 10px 20px;
+	vertical-align: top;
+}
+
+/* Formularios */
+
+form{
+	width: 580px;
+	padding: 0px 25px;
+	margin:auto;
+}
+
+form label{
+	width: 155px;
+    padding: 3px 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input{
+	width: 350px;
+    padding: 3px 15px;
+    border: 1px solid #f6f6f6;
+    border-radius: 4px;
+    background-color: #f6f6f6;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+form input[type="radio"]{
+	width: 16px;
+    margin-left: 35px;
+    margin-right: -10px;
+}
+
+form input[type="submit"]{
+	width: 30%;
+    margin: auto;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #d3a880;
+    border-radius: 20px;
+    display: block;
+    color: white;
+    background-color: #d3a880;
+    font-weight: bold;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+	color: #6b6b6b;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid #f6f6f6;
+	border-radius: 3px;
+	background-color: #f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/* Contacto*/
+
+#encuentranos ul{
+	width: auto;
+	margin: 10px 205px;
+}
+
+#encuentranos li{
+	vertical-align: top;
+	padding: 10px 20px;
+}
+
+#encuentranos ul li h5{
+	font-family: Gabriola;
+    font-size: 20px;
+    color: #d3a880;
+    padding: 10px 0px 0px 20px;
+}
+
+#encuentranos ul li p{
+	font-weight: bold;
+	padding: 2px 40px;
+}
+
+#encuentranos iframe{
+	width: 500px;
+    height: 275px;
+    float: right;
+}
+
+/*---- Footer ----*/
+
+footer{
+	margin: auto;
+	background-color: #d3a880;
+	position: absolute;
+    width: -webkit-fill-available;
+}
+
+#footer p{
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+}
+
+#footer .titulo p{
+	font-family: Corbel, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #6b6b6b;
+	margin-left: -22px;
+   	padding: 20px 25px 10px 25px;
+    text-transform: uppercase;
+}
+
+#footer a{color: white;}
+
+#footer a:hover{color: #6b6b6b;}
+
+#pie{height: 236px;}
+
+#pie ul{
+	list-style: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+	padding: 10px 40px;
+	height: auto;
+}
+
+#pie li{
+	display: inline;
+	position: relative;
+}
+
+#mapa{
+	width: 110px;
+    margin-left: 160px;
+}
+
+#datos{width: 250px;}
+
+#informacion{width: 210px;}
+
+#rrss{width: 135px;}
+
+#rrss li{
+	display: inline-block;
+	position: relative;
+}
+
+#rrss img{
+	width: 30px;
+	height: 30px;
+}
+
+#escuela{
+	background-color: #c5c5c5a6;
+	width: auto;
+	height: 77px;
+}
+
+#escuela p{
+    padding-left: 202px;
+    padding-top: 30px;
+    position: absolute;
+    font-size: 16px;
+}
+
+#escuela img{
+	margin: 11px 192px;
+    float: right;
+    width: 154px; 
+}
+
+#gracias{
+	margin-top: 70px;
+}
+
+#gracias p{
+	font-size: 20px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+#gracias a{
+    width: 6%;
+    margin: auto;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #d3a880;
+    border-radius: 20px;
+    display: block;
+    color: white;
+    background-color: #d3a880;
+    font-weight: bold;
+    text-align: center;
+}

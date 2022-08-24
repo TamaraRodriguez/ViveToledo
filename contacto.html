@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<ul id="menu">
+			<li><a href="index.html">Inicio</a>
+				<ul>
+					<li><a href="index.html#inicio">Toledo</a></li>
+					<li><a href="index.html#opiniones">Opiniones</a></li>
+				</ul>
+			<li><a href="historia.html">Historia</a>
+				<ul>
+					<li><a href="historia.html#personajes">Personajes</a></li>
+					<li><a href="historia.html#culturas">Las 3 culturas</a></li>
+					<li><a href="historia.html#leyendas">Leyendas</a></li>
+				</ul>
+			</li>
+			<li><a href="turismo.html">Turismo</a>
+				<ul>
+					<li><a href="turismo.html#consejos">Consejos</a></li>
+					<li><a href="turismo.html#turismo">Monumentos</a></li>
+					<li><a href="turismo.html#itinerario">Rutas</a></li>
+				</ul>
+			</li>
+			<li><a href="#construccion">Gastronomía</a>
+				<ul>
+					<li><a href="#construccion">Platos típicos</a></li>
+					<li><a href="#construccion">Postres</a></li>
+				</ul>
+			</li>
+			<li><a href="https://www.20minutos.es/castilla-la-mancha/toledo/" target="new">Noticias</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<header>
+		<h1>Toledo, ciudad de las tres cultura</h1>
+	</header>
+	<main>
+		<section class="iconos">
+			<ul id="dinamico">
+				<li>
+					<a href="historia.html">
+						<figure>
+							<img src="img/pergamino.png" alt="dibujo de un pergamino"/>
+							<h2>HISTORIA</h2>
+							<p>Una ciudad con encanto por sus calles, por su gente y por su gran historia de hace siglos. </p>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="turismo.html">
+						<figure>
+							<img src="img/mapa.png" alt="dibujo de un mapa">
+							<h2>TURISMO</h2>
+							<p>Descubre los rincones más mágicos de la ciudad. Monumentos y obras de artes con sus fascinantes historias.</p>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="#construccion">
+						<figure>
+							<img src="img/cubiertos.png" alt="dibujo de cubiertos">
+							<h2>GASTRONOMIA</h2>
+							<p>Conoce las comidas y duldes más típicos de la ciudad de Toledo. Con las comidas más tradicionales de la región.</p>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.20minutos.es/castilla-la-mancha/toledo/" target="new">
+						<figure>
+							<img src="img/periodico.png" alt="dibujo de un periódico">
+							<h2>NOTICIAS</h2>
+							<p>Toda la actualidad de la ciudad. Para que encuentres toda la información en el momento.</p>
+						</figure>
+					</a>
+				</li>
+			</ul>
+			<!--Ventana modal-->
+			<div id="construccion" class="modalmask">
+				<div class="modalbox movedown">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Lo sentimos ¡Estamos trabajando para mejorar!</h2>
+					<img src="img/obreros.jpg" alt="Autoretrato El greco">
+				</div>
+			</div>
+		</section>
+		<section id="reservas">
+			<article>
+				<h2>Reserva de visitas guiadas</h2>		
+				<ul>
+					<li>
+						<figure>
+							<img src="img/bus.jpg" alt="">
+						</figure>
+					</li>
+					<li>
+						<form action="gracias.html" method="post">
+						
+							<label for="nombre">Nombre:</label>
+							<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+							<label for="apellido">Apellidos:</label>
+							<input type="text" id="apellido" name="apellido" placeholder="Tu apellidos" required>
+
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+
+							<label>Teléfono:</label>
+							<input type="tel" id="phone" name="phone" placeholder="669972143" pattern="[0-9]{9}" required>
+
+							<label for="fecha">Fecha de la visita:</label>
+							<input type="date" id="fecha" name="fecha" required>
+
+							<label>Elige tu ruta:</label><br>
+							<input type="radio" id="culto" name="gender" value="culto">
+				 				<label for="culto">Toledo las 3 culturas</label><br>
+							<input type="radio" id="magia" name="gender" value="magia">
+							<label for="magia">Desubre la magia</label><br>
+							<input type="radio" id="arquitectura" name="gender" value="arquitectura">
+							<label for="arquitectura">Historia y arquitectura</label><br>
+
+							<label>Mensaje:</label>
+							<textarea name="mensaje"></textarea>
+							
+							<input type="submit" name="submit">
+						</form>		
+					</li>
+				</ul>
+			</article>
+		</section>
+		<section id="encuentranos"> 
+			<article>
+				<h2>Contactanos</h2>
+				<ul>
+					<li>
+						<h5>Email de reserva:</h5>
+						<p>reserva@vivetoledo.com</p>
+						<h5>Email de información:</h5>
+						<p>info@vivetoledo.com</p>
+						<h5>Teléfono de contacto:</h5>
+						<p>(+34) 925 26 76 66</p>
+						<h5>Direccion</h5>
+						<p>Plaza Zocodover, 8. Toledo, España</p>
+					</li>
+					<li>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.5741079899603!2d-4.025343234620889!3d39.861376379433544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a0ba59e48d5db%3A0xae76d992eb70a4e9!2sOficina%20de%20Turismo%20de%20Zocodover%2C%20%22Casa%20del%20Mapa%22!5e0!3m2!1ses!2sar!4v1592086434919!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</li>
+				</ul>
+			</article>
+		</section>
+		<section id="comentarios">
+			<article>
+				<h2>Dejanos tu comentario</h2>				
+				<ul>
+					<li>
+						<form action="gracias.html" method="post">
+							<label for="nombre2">Nombre: </label>
+							<input type="text" id="nombre2" name="nombre2" required>
+
+							<label for="apellido2">Apellido:</label>
+							<input type="text" id="apellido2" name="apellido2" required>
+
+							<label for="email2">Email:</label>
+							<input type="email" id="email2" name="email2" required>
+
+							<label for="fecha2">Fecha de la visita:</label>
+							<input type="date" id="fecha2" name="fecha2" required>
+
+							<label>Comentarios:</label>
+							<textarea name="comentario"></textarea>
+
+							<input type="submit" name="submit">
+						</form>
+					</li>
+					<li>
+						<figure>
+							<img src="img/calle.jpg" alt="">
+						</figure>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+	<footer id="footer">
+		<div id="pie">
+			<ul id="mapa">
+				<li class="titulo"><p>Mapa web</p></li>
+				<li><p><a href="index.html">Inicio</a></p></li>
+				<li><p><a href="historia.html">Historia</a></p></li>
+				<li><p><a href="turismo.html">Turismo</a></p></li>
+				<li><p><a href="#construccion">Gastronomía</a></p></li>
+				<li><p><a href="https://www.20minutos.es/castilla-la-mancha/toledo/" target="new">Noticias</a></p></li>
+				<li><p><a href="contacto.html">Contacto</a></p></li>
+			</ul>
+			<ul id="datos">
+				<li class="titulo"><p>Datos personales</p></li>
+				<li><p>Tamara Rodrígez Manznaero</p></li>
+				<li><p>21 de Noviembre de 1990</p></li>
+				<li><p>Mi cotacto:</p></li>
+				<li><p>&#9993; <a href="mailto:tamara.rodriguezm@davinci.edu.ar">tamara.rodriguezm@davinci.edu.ar</a></p></li>
+				<li><p>&#9993; <a href="mailto:tamara90decor@gmail.com">tamara90decor@gmail.com</a></p></li>
+			</ul>
+			<ul id="informacion">
+				<li class="titulo"><p>Fuentes de información</p></li>
+				<li><p>&#10004; <a href="https://www.arteguias.com/catedral/toledo.htm" target="new"> Artesguia</a></p></li>
+				<li><p>&#10004; <a href="https://www.leyendasdetoledo.com/las-diez-leyendas-de-toledo-mas-famosas-en-version-corta/" target="new"> Leyendas de Toledo</a></p></li>
+				<li><p>&#10004; <a href="https://www.tripadvisor.com.ar/ShowUserReviews-g187489-d3236411-r471521037-Toledo_City_Tour-Toledo_Province_of_Toledo_Castile_La_Mancha.html" target="new"> Tripadvaisor</a></p></li>
+				<li><p>&#10004; <a href="https://es.wikipedia.org/wiki/Toledo" target="new"> Wikipedia</a></p></li>
+				<li><p>&#10004; <a href="https://www.youtube.com/watch?v=izlz70mrX4M"> YouTube</a></p></li>
+			</ul>
+			<ul id="rrss">
+				<li class="titulo"><p>Siguenos en:</p></li>
+				<li>
+					<a href="https://www.facebook.com/" target="new">
+						<figure>
+							<img src="img/facebook.png" alt="Facebook">
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="new">
+						<figure>
+							<img src="img/instagram.png" alt="Instagram">
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/" target="new">
+						<figure>
+							<img src="img/youtube.png" alt="YouTube">
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.twitter.com/" target="new">
+						<figure>
+							<img src="img/twitter.png" alt="Twitter">
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="escuela">
+			<p>Gracias por visitarnos | Maquetado y desarrrollo web | Profesora: Florencia Kotlar | 2020 | Proyecto realizado para:</p>
+			<a href="https://davinci.edu.ar/" target="new"><img src="img/logo_escuela.png" alt="logo de la escuela davinci" ></a>
+		</div>
+	</footer>
+</body>
+</html>
+
